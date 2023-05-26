@@ -173,10 +173,10 @@
     gap: 8px;
 
     position: absolute;
-   width: 680px;
-   height: 67px;
-   left: 240px;
-   top: 885px;
+    width: 680px;
+    height: 67px;
+    left: 240px;
+    top: 885px;
 }
 
 .btn-encriptar{
@@ -246,8 +246,76 @@
     order: 0;
     flex-grow: 1;
 }
+
+/*Este es el pie de pagina*/
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    top: 950px;
+    left: 500px;
+}
+
+.footerContainer{
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    background-color: #FFFFFF;
+    margin: 10px;
+    border-radius: 50%;
     
+}
+
+.socialIcons a i{
+    font-size: 3em;
+    background-color: #FFFFFF;
+    color: #111;
+    opacity: 0.9;
+}
+
+/*Hover Effect on Social Media Icons*/
 
 
+.socialIcons a:hover{
+    background-color: #0A3871;
+    transition: 0.5s;
+    
+}
 
+.socialIcons a:hover i{
+    color: #F3F5FC;
+    background-color: #0A3871;
+    transition: 0.5s;
+}
 
+.footerBottom{
+    font-size: 20px;
+    background-color: #F3F5FC;
+    padding: 20px;
+    text-align: center;
+    
+}
+
+.footerBottom p{
+    color: #343A40;
+}
+
+.designer{
+    opacity: 0.7s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
