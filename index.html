@@ -12,21 +12,40 @@
     <articule>
         <body>
             <header>
-                <div>
-                 <h1><img src="images/Logo.png" alt="Imagen logo alura" class="logo"></h1>
-                </div>
-            </header>
+            <!--Este es el logo de alura-->    
+                <h1><img src="images/Logo.png" alt="Imagen logo alura" class="logo"></h1>
+            <!--Estos son los caracteres especiales-->    
+            <div class="caracteres">
+                <h6><img src="images/info.png" alt="info alura" class="img-info"></h6>
+                 <h6 class="info">Solo letras minúsculas y sin acentos</h6>
 
+            </div>
+
+            <!--Este es el rectangulo del encriptador-->
+            <div class="rectangulo">
+
+                  <ul>  
+                    <img src="images/Muñeco.png" alt="muñeco alura" class="muñeco">
+
+                    <li class="parrafo1">Ningún mensaje fue encontrado</li>
+                    <li class="parrafo2">Ingresa el texto que desee encriptar o desencriptar</li>
+
+                  </ul>  
+
+            </div>
+            </header>
+            
             <main>
+                <!--Este es el textarea para escrbir los textos a encriptar o desencriptar-->
             <div> 
                 <textarea class="text1" placeholder="Ingrese el texto aqui" required></textarea>
             </div>
-            
+                <!--Estos son los botones-->
             <button class="btn-encriptar">Encriptar</button>
             <button class="btn-desencriptar">Desencriptar</button>
             <button class="btn-copiar">Copiar</button>
             </main>
-
+                <!--Este es el pie de pagina-->
             <footer>
             <div>
                 <p>Yeison Sanchez</p>
@@ -37,6 +56,7 @@
                 </ul>
             </div>
             </footer>
+
         </body>
         <script src="script.js"></script>
     </articule>
