@@ -1,157 +1,70 @@
-*{
-    background:#F3F5FC;
-    font-family: 'Inter';
-    font-weight: 1000;
-    font-size: 32px;
-    line-height: 150%;
-    overflow-y: visible;
+
+
+.contenedor{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #F3F5FC;
 }
 /*Este es el estilo del logo*/
 .logo{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
+    padding: 0%;
     gap: 40px;
+
+    position: absolute;
+    width: 10%;
+    height: 8%;
+    left: 1%;
+    top: 4%;
 }
 
-.logo{
-    position: absolute;
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 40px
-}
 /*Este es el estilo del textarea*/
 .texto{
     resize: none;
     outline: none;
     position: absolute;
-    width: 600px;
-    height: 48px;
-    left: 240px;
-    top: 100px;
-    border-color: #F3F5FC;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
     max-height: 400px;
-    
-}
-
-.texto{
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 150%;
-    color: #0A3871;
+    background-color: #F3F5FC;  
 }
 
 .texto::-webkit-scrollbar{
     width: 0px;
 }
-
 .texto::placeholder{
     color: #0A3871;
 }
 
-/*Este es el estilo del rectangulo del texto de encriptado o desencriptado*/
-.rectangulo{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 400px;
-    height: 600px;
-    left: 900px;
-    top: 40px;
-    background: #FFFFFF;
-    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.88);
-    border-radius: 32px;
+.texto:focus,.texto:active{
+    border: none;
+    outline: none;
 }
 
-.muñeco{
-    display: flex;
-    position: relative;
-    width: 336px;
-    height: 304px;
-    background: #FFFFFF;
-}
-
-.parrafo1{
-    width: 336px;
-    height: 58px;
-
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 120%;
-    text-align: center;
-    color: #343A40;
-
-    flex: none;
-    order: 0;
-    align-self: stretch;
-    flex-grow: 0;
-    background: #FFFFFF;
-    padding-top: 10px;
-   
-}
-
-.parrafo2{
-    width: 336px;
-    height: 48px;
-
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    text-align: center;
-
-    color: #495057;
-
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-    background: #FFFFFF;
-    padding-top: 20px;
-}
-
-/*Este es estilo del comentario de caracteres especiales*/
-.caracteres{
+.terminos {
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     gap: 8px;
-
-}
-
-.caracteres{
     position: absolute;
-    width: 252px;
-    height: 18px;
-    left: 240px;
-    top: 550px;
-    
-    
+    width: 80%;
+    left: 12%;
+    top: 80%;
 }
 
-.img-info{
-    display: flex;
-    width: 16px;
-    height: 16px;
-
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-}
-
-.info{
-    width: 228px;
-    height: 18px;
-
+.terminos p{
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -159,127 +72,154 @@
     line-height: 150%;
     color: #495057;
     opacity: 0.8;
-
     flex: none;
     order: 1;
-    flex-grow: 0;
-}   
-    
+    flex-grow: 0; 
+}
 
-/*Estos son los estilos de los botones*/
 .botones{
     display: flex;
     flex-direction: row;
-    align-items: center;
-
-    padding: 0px;
-    gap: 8px;
-
+    align-items: flex-start;
+    padding: 1% 0;
     position: absolute;
-    width: 680px;
-    height: 67px;
-    left: 200px;
-    top:  600px;
-    background-color: #F3F5FC;
+    width: 80%;
+    left: 12%;
+    top: 82%;
+    gap: 8px;
 }
 
-.btn-encriptar{
-    display: flex;
-    flex-direction: row;
+.btn-encriptar {
     align-items: center;
     justify-content: center;
-    padding: 24px;
+    padding: 2%;
     gap: 8px;
-
-    width: 328px;
-    height: 67px;
-
-    background: #0A3871;
+    width: 25%;
+    background-color: #0A3871;
     border-radius: 24px;
-
-    width: 280px;
-    height: 19px;
     font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
     text-align: center;
-
     color: #FFFFFF;
-    
-    flex: none;
-    order: 0;
-    flex-grow: 1;
-
-   
 }
 
-.btn-desencriptar{
+.btn-desencriptar {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    padding: 24px;
-    gap: 8px;
-
-    width: 328px;
-    height: 67px;
-
+    padding: 2%;
+    gap: 8%;
+    width: 25%;
     background: #D8DFE8;
-    border: 1px solid #0A3871;
+    border: 1 px solid #0A3871;
     border-radius: 24px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-
-    width: 280px;
-    height: 19px;
-
     font-family: 'Inter', sans-serif;
-    font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 19px;
     text-align: center;
-
     color: #0A3871;
-
-    flex: none;
-    order: 0;
-    flex-grow: 1;
 }
 
-/*Este es el pie de pagina*/
-footer{
+.btn-desencriptar:hover,.btn-encriptar:hover{
+    margin: 0.3%;
+    width: 24.5%;
+    padding: 1.8%;
+}
+
+.encriptado{
     display: flex;
     justify-content: center;
-    align-items: center;
     position: absolute;
-    width: 400px;
-    height: 100%;
-    top: 700px;
-    left: 500px;
+    width: 30%;
+    height: 90%;
+    left: 60%;
+    top: 5%;
+    background: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.08);
+    border-radius: 32px;
 }
 
-.footerContainer{
+.mensaje-encriptado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 16px;
+    position: absolute;
     width: 100%;
-    padding: 70px 30px 20px;
+    top: 65%;
+    text-align: center;
+}
+
+.mensaje-encriptado h2{
+    width: 60%;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    color: #343A40;
+}
+
+.mensaje-encriptado p{
+    width: 80%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: #495057;
+}
+
+.encriptado img{
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    top: 15%;
+}
+/*Este es el estilo del rectangulo del texto de encriptado o desencriptado*/
+
+
+/*Este es el pie de pagina*/
+
+
+.footerContainer{
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
+    width: 100%;
 }
 
 .socialIcons{
     display: flex;
-    position: absolute;
+    align-items: center;
     justify-content: center;
+    padding: 1%;
+    gap: 1%;
+    position: absolute;
+    
+    width: 100%;
+    top: 100%;
+    background: #F3F5FC;
+    
 }
 
 .socialIcons a{
     text-decoration: none;
-    padding: 10px;
+    padding: 1%;
     background-color: #FFFFFF;
-    margin: 10px;
+    margin: 0.5%;
     border-radius: 50%;
+    margin-top: auto;
+    
     
 }
 
@@ -288,6 +228,7 @@ footer{
     background-color: #FFFFFF;
     color: #111;
     opacity: 0.9;
+    
 }
 
 /*Hover Effect on Social Media Icons*/
@@ -304,37 +245,27 @@ footer{
     background-color: #0A3871;
     transition: 0.5s;
 }
-
-.footerBottom{
-    position: absolute;
-    font-size: 15px;
-    background-color: #F3F5FC;
-    padding: 20px;
-    display: flex;    
-    top: 150px;
-    left: 20px;
-}
-
-.footerBottom p{
-    color: #343A40;
-}
-
-.designer{
-    opacity: 0.7s;
+.designer{ 
+    opacity: 0.7s; 
     text-transform: uppercase;
-    letter-spacing: 1px;
-    font-weight: 1000;
-    margin: 0px 5px;
-    
+    letter-spacing: 1%;
+    font-weight: 800;
+   
 }
 
 
 @media (max-width: 57.5em) {
-    .container{
+    .logo{
+        width: 10%;
+        height: 3%;
+        top: 1%;
+        left: 1%;
+    }
+    .contenedor{
         display: flex;
         flex-direction: row;
     }
-    .rectangulo{ 
+    .encriptar{ 
         width: 100%;
     }
     .texto {
@@ -343,12 +274,12 @@ footer{
         left: 10%;
         top: 5%;
     }
-    .caracteres {
+    .terminos {
         width: 80%;
         left: 10%;
         top: 67%;
     }
-    .caracteres h6 {
+    .terminos h6 {
         font-size: 16px;
     }
     .botones {
@@ -365,11 +296,23 @@ footer{
         width: 47.5%;
         padding: 1.8%;
     }
-    .rectangulo {
+    .encriptado {
         width: 80%;
         height: 15%;
         left: 10%;
         top: 80%;
     }
-    .
-}
+    .mensaje-encriptado{
+        width: 100%;
+        top: 5%;
+    }
+    .encriptado img{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }
+    .footerContainer{
+        top: 0;
+        display: none;
+        visibility: hidden;
+    }

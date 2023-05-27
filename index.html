@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
      <body>
-            <header>
-            <!--Este es el logo de alura-->    
-                <h1><img src="images/Logo.png" alt="Imagen logo alura" class="logo"></h1>
-            </header>
-
         <div class="contenedor">
+            <div> 
+                <h1><img src="images/Logo.png" alt="Imagen logo alura" class="logo"></h1>
+            </div>
+
             <!--Este es el textarea para escrbir los textos a encriptar o desencriptar-->
             <div class="encriptar">
                 <textarea class="texto" id="texto" placeholder="Ingrese el texto aqui" required name="texto" cols="30" rows="10"></textarea>
@@ -36,28 +35,23 @@
             <div class="encriptado">
                     <img src="images/Muñeco.png" alt="muñeco alura" id="muñeco">
                     <div class="mensaje-encriptado" id="mensaje-encriptado">
-                        <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
+                        <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
                         <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+                        <!--<textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>-->
                     </div>
-                
-                <!--Este es el pie de pagina-->
-            <footer>
-                <div class="footerContainer">
-                    <div class="socialIcons">
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-twitter"></i></a>
-                    </div>
-                </div>
-
-                <div class="footerBottom">
-                    <p>Copyright &copy;2023 Designed by <span class="designer">Yeison S</span></p>
-                </div>
-            </footer>
             </div>
         </div>
+        <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <p>Copyright &copy;2023 Designed by <span class="designer">Yeison S</span></p>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </div>
+        </footer>
     </body>
     <script src="script.js"></script>
 </html>
