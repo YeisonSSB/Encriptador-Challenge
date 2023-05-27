@@ -23,7 +23,7 @@
     top: 40px
 }
 /*Este es el estilo del textarea*/
-.text1{
+.texto{
     resize: none;
     outline: none;
     position: absolute;
@@ -36,7 +36,7 @@
     
 }
 
-.text1{
+.texto{
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -45,13 +45,14 @@
     color: #0A3871;
 }
 
-.text1::-webkit-scrollbar{
+.texto::-webkit-scrollbar{
     width: 0px;
 }
 
-.text1::placeholder{
+.texto::placeholder{
     color: #0A3871;
 }
+
 /*Este es el estilo del rectangulo del texto de encriptado o desencriptado*/
 .rectangulo{
     display: flex;
@@ -325,4 +326,50 @@ footer{
     font-weight: 1000;
     margin: 0px 5px;
     
+}
+
+
+@media (max-width: 57.5em) {
+    .container{
+        display: flex;
+        flex-direction: row;
+    }
+    .rectangulo{ 
+        width: 100%;
+    }
+    .texto {
+        width: 80%;
+        height: 60%;
+        left: 10%;
+        top: 5%;
+    }
+    .caracteres {
+        width: 80%;
+        left: 10%;
+        top: 67%;
+    }
+    .caracteres h6 {
+        font-size: 16px;
+    }
+    .botones {
+        width: 80%;
+        left: 10%;
+        top: 70%;
+    }
+    .btn-encriptar, .btn-desencriptar {
+        width: 48%;
+        border-radius: 16px;
+    }
+    .btn-encriptar:hover,.btn-desencriptar:hover {
+        margin: 0.3%;
+        width: 47.5%;
+        padding: 1.8%;
+    }
+    .rectangulo {
+        width: 80%;
+        height: 15%;
+        left: 10%;
+        top: 80%;
+    }
+    .
 }

@@ -9,66 +9,55 @@
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<section>
-    <articule>
-        <body>
+     <body>
             <header>
             <!--Este es el logo de alura-->    
                 <h1><img src="images/Logo.png" alt="Imagen logo alura" class="logo"></h1>
+            </header>
+
+        <div class="contenedor">
+            <!--Este es el textarea para escrbir los textos a encriptar o desencriptar-->
+            <div class="encriptar">
+                <textarea class="texto" id="texto" placeholder="Ingrese el texto aqui" required name="texto" cols="30" rows="10"></textarea>
 
             <!--Estos son los caracteres especiales-->    
-            <div class="caracteres">
+            <div class="terminos">
+                <img src="images/info.png" alt="info alura" class="img-info">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
 
-                <h6><img src="images/info.png" alt="info alura" class="img-info"></h6>
-                 <h6 class="info">Solo letras minúsculas y sin acentos</h6>
-
+            <!--Estos son los botones-->
+            <div class="botones">
+                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
             </div>
 
             <!--Este es el rectangulo del encriptador-->
-            <div class="rectangulo">
-
-                  <ul>  
-                    <img src="images/Muñeco.png" alt="muñeco alura" class="muñeco">
-
-                    <li class="parrafo1">Ningún mensaje fue encontrado</li>
-                    <li class="parrafo2">Ingresa el texto que desee encriptar o desencriptar</li>
-
-                  </ul>  
-
-            </div>
-            </header>
-            
-            <main>
-                <!--Este es el textarea para escrbir los textos a encriptar o desencriptar-->
-            <div> 
-                <textarea class="text1" placeholder="Ingrese el texto aqui" required></textarea>
-            </div>
-
-            <div class="botones">
-                <!--Estos son los botones-->
-                <button class="btn-encriptar">Encriptar</button>
-                <button class="btn-desencriptar">Desencriptar</button>
-            </div>
-
-            </main>
+            <div class="encriptado">
+                    <img src="images/Muñeco.png" alt="muñeco alura" id="muñeco">
+                    <div class="mensaje-encriptado" id="mensaje-encriptado">
+                        <h2 id="titulo-mensaje">Ningún mensaje encontrado</h2>
+                        <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>
+                    </div>
+                
                 <!--Este es el pie de pagina-->
             <footer>
-            <div class="footerContainer">
-                <div class="socialIcons">
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <div class="footerContainer">
+                    <div class="socialIcons">
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
                 </div>
-            </div>
 
-            <div class="footerBottom">
-                <p>Copyright &copy;2023 Designed by <span class="designer">Yeison S</span></p>
-            </div>
+                <div class="footerBottom">
+                    <p>Copyright &copy;2023 Designed by <span class="designer">Yeison S</span></p>
+                </div>
             </footer>
-
-        </body>
-        <script src="script.js"></script>
-    </articule>
-</section>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
 </html>
