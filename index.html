@@ -20,7 +20,7 @@
 
             <!--Este es el textarea para escrbir los textos a encriptar o desencriptar-->
             <div class="encriptar">
-                <textarea class="texto" id="texto" placeholder="Ingrese el texto aqui" name="texto" cols="30" rows="10"></textarea>
+                <textarea class="texto" id="texto" onekeypress="return check(event)" placeholder="Ingrese el texto aqui" name="texto" cols="30" rows="10"></textarea>
 
             <!--Estos son los caracteres especiales-->    
             <div class="terminos">
@@ -36,7 +36,7 @@
 
             <!--Este es el rectangulo del encriptador-->
             <div class="encriptado">
-                <textarea name="mensaje" id="mensaje" cols="20" rows="10" class="mensaje"></textarea>
+                <textarea name="mensaje" id="mensaje" onkeypress="return check(event)" cols="20" rows="10" class="mensaje"></textarea>
                     <div class="mensaje-encriptado" id="mensaje-encriptado">
                         <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
                         <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
