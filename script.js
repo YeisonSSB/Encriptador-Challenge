@@ -4,6 +4,7 @@ const copia = document.querySelector(".copiar");
 const tituloMensaje = document.getElementById("titulo-mensaje");
 copia.style.display = "none"
 
+<<<<<<< HEAD
 function validarTexto(){
     let textoEscrito = document.querySelector(".texto").value;
     let validador = textoEscrito.match(/^[a-z]*$/);
@@ -12,6 +13,25 @@ function validarTexto(){
         alert("Solo son permitidas letras minúsculas y sin acentos")
         location.reload();
         return true;
+=======
+    let textoCifrado = texto
+        .replace(/e/gi, "enter")
+        .replace(/i/gi, "imes")
+        .replace(/a/gi, "ai")
+        .replace(/o/gi, "ober")
+        .replace(/u/gi, "ufat");
+    
+    if (texto.length != 0){
+        document.getElementById("texto").value = textoCifrado;
+        tituloMensaje.textContent = "Texto encriptado con éxito"
+        parrafo.textContent = "";
+        muñeco.src = "./Images/exito.jpg";
+    } else {
+        muñeco.src = "./Images/Muñeco.png";
+        tituloMensaje.textConten = "Ningun mensaje fue encontrado";
+        parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
+        swal("Ooooops!", "Debes ingresar un texto", "warning");
+>>>>>>> 768eda371285000b96e1c7d5488443c2e8b04433
     }
 }
 
@@ -73,8 +93,15 @@ function desencriptar(stringDesencriptada){
             document.getElementById("texto").value = matrizCodigo;
         tituloMensaje.textContent = "Texto desencriptado con éxito"
         parrafo.textContent = "";
+<<<<<<< HEAD
 
         }else {
+=======
+        muñeco.src = "./Images/desencriptado.png";
+
+        }else {
+            muñeco.src = "./Images/Muñeco.png";
+>>>>>>> 768eda371285000b96e1c7d5488443c2e8b04433
         tituloMensaje.textConten = "Ningun mensaje fue encontrado";
         parrafo.textContent = "Ingresa el texto que deseas encriptar o desencriptar";
         swal("Ooooops!", "Debes ingresar un texto", "warning");
