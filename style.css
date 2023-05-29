@@ -21,6 +21,10 @@
     top: 4%;
 }
 
+.logo:hover{
+    padding: 10px;
+}
+
 /*Este es el estilo del textarea*/
 .texto{
     resize: none;
@@ -130,11 +134,40 @@
     padding: 1.8%;
 }
 
-.encriptado{
+.copiar {
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 2%;
+    gap: 8%;
+    background: #D8DFE8;
+    border-radius: 24px;
+    font-size: 18px;
+    color: #0A3871;
+
+    width: 80%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    transition: 0.5s;
+   
+
+}
+
+.copiar:hover{
+    width: 90%;
+    font-size: 20px;
+    background-color: #0A3871;
+    color: #FFFFFF;
+}
+
+.encriptado{    
     display: flex;
     justify-content: center;
     position: absolute;
-    width: 30%;
+    width: 35%;
     height: 90%;
     left: 60%;
     top: 5%;
@@ -177,11 +210,24 @@
     color: #495057;
 }
 
-.encriptado img{
+.mensaje{
+    font-size: 25px;
+    outline: none;
+    resize: none;
+    background: white;
+    background-image: url("Images/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    color: #0A3871;
+    margin-top: 20%;
     position: absolute;
-    width: 80%;
+    width: 90%;
     height: 50%;
-    top: 15%;
+}
+
+.mensaje:focus {
+    outline: none;
 }
 /*Este es el estilo del rectangulo del texto de encriptado o desencriptado*/
 

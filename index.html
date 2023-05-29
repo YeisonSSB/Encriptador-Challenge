@@ -20,7 +20,7 @@
 
             <!--Este es el textarea para escrbir los textos a encriptar o desencriptar-->
             <div class="encriptar">
-                <textarea class="texto" id="texto" placeholder="Ingrese el texto aqui" required name="texto" cols="30" rows="10"></textarea>
+                <textarea class="texto" id="texto" placeholder="Ingrese el texto aqui" name="texto" cols="30" rows="10"></textarea>
 
             <!--Estos son los caracteres especiales-->    
             <div class="terminos">
@@ -30,17 +30,19 @@
 
             <!--Estos son los botones-->
             <div class="botones">
-                <button class="btn-encriptar" type="button" onclick="encriptar()">Encriptar</button>
-                <button class="btn-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+                <button class="btn-encriptar" type="button" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn-desencriptar" type="button" onclick="btnDesencriptar()">Desencriptar</button>
             </div>
 
             <!--Este es el rectangulo del encriptador-->
             <div class="encriptado">
-                    <img src="images/Muñeco.png" alt="muñeco alura" id="muñeco">
+                <textarea name="mensaje" id="mensaje" cols="20" rows="10" class="mensaje"></textarea>
                     <div class="mensaje-encriptado" id="mensaje-encriptado">
                         <h2 id="titulo-mensaje">Ningún mensaje fue encontrado</h2>
                         <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
-                        <!--<textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea>-->
+                        <button class="copiar" type="button" onclick="copiar()">Copiar</button>
+                        
+                        
                     </div>
             </div>
         </div>
@@ -48,10 +50,10 @@
             <div class="footerContainer">
                 <div class="socialIcons">
                     <p>Copyright &copy;2023 Designed by <span class="designer">Yeison S</span></p>
-                    <a href=""><i class="fa-brands fa-github"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://github.com/YeisonSSB"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/yeisonssb/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/yeison-sanchez-pebe/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/Yeison01185"><i class="fa-brands fa-twitter"></i></a>
                 </div>
             </div>
         </footer>
